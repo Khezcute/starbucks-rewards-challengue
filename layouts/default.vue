@@ -1,12 +1,15 @@
 <template>
-  <div>
+  <div class="relative">
+    <NavBar />
     <Nuxt />
   </div>
 </template>
 <style>
 html {
-  font-family: 'Goldplay', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+  font-family: SoDoSans, 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+  letter-spacing: -.01em;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

@@ -1,7 +1,7 @@
 export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        title: 'starbucks-rewards-challenge',
+        title: 'Starbucks® Rewards – Order Ahead, Endless Extras, Free Coffee: Starbucks Coffee Company',
         htmlAttrs: {
             lang: 'en'
         },
@@ -12,7 +12,7 @@ export default {
             { name: 'format-detection', content: 'telephone=no' }
         ],
         link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+            { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
         ]
     },
 
@@ -40,5 +40,20 @@ export default {
     axios: {},
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
-    build: {}
+    build: {
+        postcss: {
+            // Add plugin names as key and arguments as value
+            // Install them before as dependencies with npm or yarn
+            plugins: {
+                // Disable a plugin by passing false as value
+                'postcss-nested': {},
+            },
+            preset: {
+                // Change the postcss-preset-env settings
+                autoprefixer: {
+                    grid: true
+                }
+            }
+        }
+    }
 }

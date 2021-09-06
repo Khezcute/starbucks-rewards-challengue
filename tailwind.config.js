@@ -8,7 +8,12 @@ module.exports = {
     ],
     darkMode: false, // or 'media' or 'class'
     theme: {
-        extend: {}
+        extend: {
+            colors: {
+                'sb-primary': '#008248',
+                'sb-secondary': '#1e3932'
+            }
+        }
     },
     variants: {
         extend: {}
