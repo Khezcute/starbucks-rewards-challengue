@@ -26,6 +26,13 @@ export default {
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
     buildModules: ["@nuxtjs/tailwindcss"],
 
+    tailwindcss: {
+        cssPath: '~/assets/css/tailwind.css',
+        configPath: 'tailwind.config.js',
+        exposeConfig: false,
+        mode: 'jit'
+    },
+
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
         // https://go.nuxtjs.dev/axios
@@ -44,12 +51,6 @@ export default {
                 // Disable a plugin by passing false as value
                 "postcss-nested": {}
             },
-            preset: {
-                // Change the postcss-preset-env settings
-                autoprefixer: {
-                    grid: true
-                }
-            }
         },
         splitChunks: {
             layouts: false,

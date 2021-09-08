@@ -42,13 +42,13 @@ html {
 
 /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
 *::-webkit-scrollbar-thumb:hover {
-  background: #00937f;
+  background: #1e3932;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* Cambiamos el fondo cuando esté en active */
 *::-webkit-scrollbar-thumb:active {
-  background-color: #00937f;
+  background-color: #1e3932;
 }
 
 /* Ponemos un color de fondo y redondeamos las esquinas del track */
@@ -64,7 +64,7 @@ html {
 }
 
 *::selection {
-  background: #00937f;
+  background: #1e3932;
   color: #fff;
 }
 </style>
