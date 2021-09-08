@@ -58,9 +58,9 @@ export default {
             order: "presetEnvAndCssnanoLast",
             preset: {
                 // Change the postcss-preset-env settings
+                stage: 2,
                 autoprefixer: {
-                    grid: true,
-                    stage: 2
+                    grid: true
                 }
             }
         },
