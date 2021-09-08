@@ -37,28 +37,15 @@ export default {
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
-        extractCSS: true,
-        collapseBooleanAttributes: true,
-        decodeEntities: true,
-        minifyCSS: true,
-        minifyJS: true,
-        processConditionalComments: true,
-        removeEmptyAttributes: true,
-        removeRedundantAttributes: true,
-        trimCustomFragments: true,
-        useShortDoctype: true,
         postcss: {
             // Add plugin names as key and arguments as value
             // Install them before as dependencies with npm or yarn
             plugins: {
                 // Disable a plugin by passing false as value
-                "postcss-nested": {},
-                cssnano: { preset: "default" }
+                "postcss-nested": {}
             },
-            order: "presetEnvAndCssnanoLast",
             preset: {
                 // Change the postcss-preset-env settings
-                stage: 2,
                 autoprefixer: {
                     grid: true
                 }
